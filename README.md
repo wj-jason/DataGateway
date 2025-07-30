@@ -17,7 +17,6 @@ Config dictionary:
 ```python
 config = {
     "folder_id": <string of characters in drive url after final '/' character>,
-    "client_config_file": "client_secrets.json",
-    "token_file": "token.json" # created automatically
+    "client_config_file": "client_secrets.json"
 }
 ```
