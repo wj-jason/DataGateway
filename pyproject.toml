@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "DataGateway"
+version = "0.2.0"
+description = "A Python interface for managing Parquet tables stored on Google Drive."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "Jason", email = "jason.wang1709@gmail.com"}
+]
+license = {text = "MIT"}
+dependencies = [
+  "pandas",
+  "pyarrow",
+  "pydrive2"
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Operating System :: OS Independent",
+  "License :: OSI Approved :: MIT License"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["DataGateway"]
